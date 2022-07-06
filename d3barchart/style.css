@@ -1,0 +1,43 @@
+body
+{
+  background: #FFA0A0  ;
+  font-family: "Book Antiqua";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg
+{
+  background: white;
+  border-radius: 25px;
+}
+
+.tooltip 
+{	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: auto;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: #FFBCBC  ;	
+    border: 0px;		
+    border-radius: 2px;			
+    pointer-events: none;			
+}
+
+#title
+{
+  background: white;
+  font-size: 30px;
+  width: 500px;
+  border-radius: 15px 15px 0 0;
+}
+
+.bar:hover
+{
+  fill: #FFBCBC  ;
+}

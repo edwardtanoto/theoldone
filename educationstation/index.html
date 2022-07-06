@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Code Zone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./img/favicon-code.ico" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>    
+<script src="main.js"></script>
+</head>
+<body>  
+        <script src="main.js"></script>
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="codezone">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                <a class="navbar-brand" href="https://edwardtanoto.github.io/educationstation/index.html">Codezone</a>
+                                
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                  <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                            <a class="nav-link header" href="#tes">Introduction</a>	  
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#algorithm">Algorithm Station</a>	  
+                                    </li>
+                                    <li class="nav-item">
+                                            <a class="nav-link" href="#source">Sources</a>
+                                    </li>
+                                </div>
+                                  </ul>
+                               
+                               
+                              </nav>
+                  <br>
+                  <div class="container">
+                        <div class="text-editor">
+                            <h1><span class="txt-type" data-wait="2000" data-words='["Where to start?"]'></span></h1>
+                             <div id="home">
+                                    <h2><a href="https://www.youtube.com/watch?v=FVdQETvHBoE&list=PLyBrFxr0n1iP-qeAAaIt51XEHAuKtSXaN&index=13">What do programmers actually do? </a></h2>
+                                    <h3>There are a lot of text editors you can choose, here are some commonly used editor.</h3>
+                                    <ul class="ul">
+                                        <li class="li1"><a target="_blank" href="https://code.visualstudio.com">Visual Studio Code</a></li>
+                                        <li class="li1"><a target="_blank" href="https://atom.io">Atom</a></li>
+                                        <li class="li1"><a target="_blank" href="https://www.sublimetext.com">Sublime Text</a></li>
+                                        <li class="li1"><a target="_blank" href="http://brackets.io">Bracket</a></li>
+                                    </ul>
+                                    <br>
+                                    <h4>Personally, I recommend VSCode. You can choose whatever you prefer.</h4>
+                                    <br>
+                                    <h4>Why Visual Code Studio?</h4>
+                                    <p>Its fast, it has a lot of feature to make you type code faster, you can also create your own extension here, or use extentions, and it has source control tool to use github faster.</p>
+                                    <br>
+                                    <video controls autoplay muted width="100%" class="center">
+                                        <source src="vids/demo.mov">
+                                    </video>
+                                </div>
+                        </div>
+                          <div class="html" id="tes">
+                                <h2>I've downloaded a text editor now.<br> What should I start with?</h2>
+                        <h4>Most people learn Javascript or Python to start coding. This page will cover Javascript language, but before learning Javascript, I suggest you learn HTML to start implement Javascript code. You can open this <a href="https://repl.it/@EdwardTanoto/learnpython">https://repl.it/@EdwardTanoto/learnpython</a> if you are interested in python.</h4>
+                        <br>
+                        <h4>What is HTML? What can I create with it?</h4>
+                        <br>
+                        <p>We use HyperTextMarkupLanguage to create the structure of our web, HTML is like the foundation of the house, to design the house, we use CSS, and to make the house a functional home, we use Javascript. </p>
+                        <h4>Why learn HTML? What's the point?</h4>
+                        <br>
+                        <p>Notice the https:// in every web in internet? It stands for Hyper Text Transfer Protocol, most of web that we see in internet has HTML as the foundation of the web structure.</p>
+                        <xmp>
+   <html> <!--You can copy paste this code to text editor, save it with index.html and run it in your browser.-->
+          <head> <!-- This is a comment, everything written here wont be executed by the compiler. -->
+    <!-- We use <head> to mainly put our metadata, metadata typically define the document title, character set, styles, links, scripts, and etc -->
+                <title>Hello World!</title>
+            </head>
+            <body>
+                   <!-- Inside the body tag is the content of the document -->
+                   <h1>This is header</h1>
+                   <p>This is paragraph </p>
+                   <a href="https://www.google.com">This is anchor <!-- It opens google after you click it--> </a>
+                   <img src="banana.jpg" > <!--It doesn't insert banana image because there is no banana.jpg in your pc. Try put URL here. -->
+                   <iframe src="https://www.youtube.com/embed/FTQbiNvZqaY?"> </iframe> <!-- It plays Africa by Toto  -->
+                <form> <!--We use form to take the data from the input, you will use it in your javascript code later-->
+                   <button type="submit">Click me </button><!--It creates submit button-->
+                   <input type="password" placeholder="Type password here"> <!--The type tag can also be textarea, text, email, adress, and etc -->
+                   <div class="hi" id="hello"> </div> <!--We use div to separate the structure of our HTML, and class and id to identify the div-->
+                </form>
+                   
+            </body>
+       </html>
+                         </xmp>
+                          </div>
+                    <div class="css">
+                        <h4>That is the example of HTML,and the best source to learn HTML is <a href="https://www.freecodecamp.org">freecodecamp</a>, you will be taught to create your own project there and earn certificate.</h4>
+                        <br>
+                        <h4>Now what? Well now we paint the house with CSS, CSS is short of Cascade Style Sheet, and we use it to design the web, we can also make animation with CSS, cool right? But CSS isnt a programming language, it's a style sheet language, we will get to the programming section after CSS.</h4>
+                        <br>
+                        <h4>There are 3 ways to use CSS in your HTML file</h4> 
+                        <ol>
+                            <li>Use style inside the HTML tag</li>
+                            <li>Put style in head tag</li>
+                            <li>With an external file, create other file name style.css or whatever you prefer</li>
+                        </ol>
+                        <h3>The cleanest way to use it to by creating external file, but if you use CSS inside your HTML tag, it will overwrite the external file CSS code and style tag in head HTML tag, the priority is same as the number list.</h3>
+                                <xmp>
+    <html> <!--You can copy paste this code to text editor, save it with index.html, and run it in your browser.-->
+            <head> 
+             <link rel="stylesheet" type="text/css" href="style.css"> <!--External file of css-->
+             <title>Hello World!</title>
+             <style>
+                 body{
+                     /* This is how you comment in CSS
+                        background-color : white;
+                     */
+                        background-color : black;
+                        font-size: 10px;
+                        margin-right: auto;
+                        position: fixed;
+                        display:block;  
+                 }
+                 .answer{
+                     /* We use . before the class name */
+                     font-size: 60px;
+                     margin-top: 40%;
+                 }
+                 #color{
+                     /* We use # before the id name */
+                     color:aqua 
+                 }
+             </style>
+            </head>
+             <body style="background-color:blue"> <!--Check the background color of your web-->
+            <ol>
+             <li>White</li>
+             <li>Black</li>
+             <li>Blue </li>
+            </ol>
+             <p class="answer">The correct answer is 3</p>
+             <p id="color">which is blue.</p>
+            </body>
+    </html>
+                                </xmp>  
+                    </div>
+                                <div class="javascript">
+                                    <h3>Well I wont go to detail of course, you should copy paste the whole code into your text editor and run it to your browser, and next part is the fun part. Javascript is the programming language that works in web, and its different than Java, and how do we include Javascript works in our HTML?</h3>
+                                    <br>
+                                    <ol>
+                                        <li>By using script tag in body or head.</li>
+                                        <li>By using external file</li>
+                                    </ol>
+                                    <xmp>
+    <html> <!--You can copy paste this code to text editor, save it with index.html, and run it in your browser.-->
+            <head> 
+             <link rel="stylesheet" type="text/css" href="style.css">
+             <title>Hello World!</title>
+             <script src="main.js"></script> <!--External file of js-->
+            </head>
+             <body>
+            <script>
+                function myFirstFunction(){
+                    alert("Hello World!")
+                }   
+            </script>
+            <input type="text" id="demo">
+            <button onclick="myFirstFunction()">Click here</button>
+            </body>
+    </html>
+                                    </xmp> 
+                                    <h4>That code will alert your browser everytime you click the button. You can learn javascript in <a href="www.freecodecamp.org">freecodecamp</a>, and <a href="www.codewars.com">codewars</a>, I also recommend you to watch <a href="https://www.youtube.com/watch?v=hdI2bqOjy3c&t=4542s">Brad Traversy's</a> Javascript crash course, since it will be very boring to study programming from this website, and programming shouldnt be boring. Algorithm and data structures is very important in every programming language.</h4>
+                                    <h4>Create a variable in Javascript</h4>
+                                    <br>
+                                    <br>
+                                    
+                                  <p>  <code>
+         <br>  var age = 17; // Number
+         <br> var name = "Edward"; // string, starts with " " or ' '
+         <br> var playGames = true; // Boolean
+         <br> var char = "A" //Character, starts with " " or ' '
+         <br> var nothing = null //represents unknown values
+         <br> var future = undefined; //undefined means a variable has been declared but has not yet been assigned a value
+                                    
+        
+                                    </code></p>
+                                    <p>ES6 introduced <code> let</code> and<code> const</code> to store your data, now most people use  <code>let</code> more than var because it's more secure. <code> const</code> means constant so the value can't be changed, it's the most secure way to store your data. </p>
+                                    <p><code>
+                                        const i = 100;
+                                       <br> i += 200;
+                                       <br> console.log(i)
+                                       <br>//Uncaught SyntaxError: Identifier 'i' has already been declared
+                                    </code></p> <br> <br>
+                                    <p>There are 2 types of data that stored inside your memory, primitive data types, and reference data types</p>
+                                    <p>Primitive data type is the data that stored directly to your memory, meanwhile reference data type stores your data in heap.</p>
+
+                                    <p>If the const store reference data type, like object or array , the data inside the object can be changed.  </p>
+                                    <p><a href="https://codeburst.io/explaining-value-vs-reference-in-javascript-647a975e12a0">Articles about primitive and reference data type</a></p>
+                                    <p><code>
+                                        const firstName = {
+                                      <br>   &nbsp;&nbsp;&nbsp;   "Name" : "Edward",
+                                      <br> &nbsp;&nbsp;&nbsp; "Age" :18
+                                      <br> }
+                                      <br>  
+                                      <br>  firstName.Name = "John"
+                                      <br>   console.log(firstName.Name) //Output: John
+                                    </code></p>
+                                    <p><code>let</code> allows you to declare variables that are limited in scope to the block, statement, or expression on which it is used. This is unlike the <code>var</code> keyword, which defines a variable globally, or locally to an entire function regardless of block scope</p>
+                                    <p><code>
+                                     <br>   let x = 1;
+                                     <br>
+                                     <br>  if (x === 1) {
+                                        <br>   &nbsp;&nbsp; x = 2;
+                                        <br>  
+                                        <br>   console.log(x);
+                                        <br>    // expected output: 2
+                                        <br>    }
+                                        <br>    
+                                        <br>     console.log(x);
+                                        <br>      // expected output: 1
+                                    </code> </p>
+                                    <p>
+                                        Variable naming convention<br><br><code>
+                                            var firstName = "Camel Case"; //Most common way to name your variable <br>
+                                            var FirstName = "Pascal Case";//Usually used in classes <br>
+                                            var first_name = "Underscore"//Usually used in programming language like python
+                                        </code>
+                                    </p>
+                                    <br><br>
+                                    <h4><a href="https://codeburst.io/const-let-and-var-which-and-when-541a2721c18">Check out this article to understand var, let, and const.</a></h4>
+                                    <br><br><br> <h4>Math operator</h4>
+                                   <p> <code>
+                                       Number
+                                       <br><br>
+                                        <br>   age % 7 returns 3  & (modulus) returns the remainder 
+                                        <br> 21 / 3 returns 7
+                                        <br>10 + 10 returns 20
+                                        <br> 10 - 10 returns 0
+                                        <br> 10 * 10 returns 100
+                                        <br> 10 ** 2 returns 100
+                                        <br> var nextYear = age++ // return 18
+                                        <br> var age = age + 1 // 18
+                                        <br> or 
+                                        <br> var age += 1 // returns 18 , try -=, *= , /= , you get the idea.
+                                        <br><br>
+                                        String
+                                       <br><br>
+                                       "1"+"1" returns 11
+                                     <br>  "Hello"+" world" returns Hello world
+                                     <br> var name = ""; //Prepare name variable with string data type , indicated with ""
+                                     <br> name += "John"
+                                     <br> // name is now John
+                                     <br> name += " Doe"
+                                     <br> // name is now "John Doe"
+                                    </code></p>
+                                    <br><br><br>   <h4>Comparison operator</h4>
+                                   <p> <code>
+                                        <br>  == is for equality
+                                        <br> console.log(1 == 1);
+                                        <br>  // expected output: true
+                                        <br>
+                                        <br> console.log("1" == 1);
+                                        <br> // expected output: true
+                                        <br> 
+                                        <br> === is for strict equality
+                                        <br> console.log(1 === 1);
+                                        <br> // expected output: true 
+                                        <br> 
+                                        <br> console.log("1" === 1);
+                                        <br> // expected output: false
+                                        <br>
+                                        <br>  != is for unequality
+                                        <br>  console.log(1 != 1);
+                                        <br>  // expected output: false  
+                                        <br>  
+                                        <br>  console.log(1 != 2);
+                                        <br>  // expected output: true
+                                        <br>
+                                        <br>  others are like < , > , <= ,>=.
+                                    </code></p>
+                                    <br><br><br>  <h4>Array</h4>
+                                  <p>  <code>
+                                        <br> var fruits = ["Apple","Banana","Mango"]
+                                        <br>          0        1       2
+                                        <br>  console.log(fruits[0]) //expected output: Apple
+                                        <br> console.log(fruits[1]) //expected output: Banana
+                                        <br> console.log(fruits[2]) //expected output: Mango
+                                    </code></p>
+                                    <br><br><br>  <h4>Iterate through array</h4>
+                                    <br> <p><code>
+             for(var i=0;i < fruits.length;i++){
+                <br>  console.log(fruits[i]);}
+                <br> //expected output: 
+                <br>             Apple
+                <br>             Banana
+                <br>             Mango
+             
+            </code></p><br><br><br>
+                                    <h5>Well, there are a lot of array's method that we use in code, check out this <a href="https://www.w3schools.com/js/js_array_methods.asp">source</a>.</h5>
+                                    <br><br> <h4>Object</h4><p>In real life, a car is an object. A car has properties like weight and color, and methods like start and stop. All cars have the same properties, but the property values differ from car to car.
+
+                                            All cars have the same methods, but the methods are performed at different times.</p>
+                                  <p>  <code>
+             var human = {
+                <br> &nbsp;&nbsp;&nbsp;   "name" : "Edward",
+                <br> &nbsp;&nbsp;&nbsp;  "age" : 17,
+                <br> &nbsp;&nbsp;&nbsp;  "hobby" : "playing games"
+                <br> }
+                <br>  //Accessing Object Properties with Dot notation
+                <br> console.log(human.name) // expected output : "Edward"
+                <br>  console.log(human.age) // expected output : 17
+                <br> console.log(human.hobby) // expected output : "playing games"
+                <br>
+                <br>  //Accessing Object Properties with Bracket notation
+                <br>  console.log(human["name"]) // expected output : "Edward"
+                <br>   console.log(human["age"]) // expected output : 17
+                <br>   console.log(human["hobby"]) // expected output : "playing games"
+                <br><br>//Let'see what other things human have, and add it to human variable
+                <br>
+                human.nationality = "Indonesia";
+               <br> console.log(human)//{name: "Edward", age: 17, hobby: "playing games", "nationality": "Indonesia"}
+            </code>
+        </p><br><br><br>
+                                    <h4>That is for the data structure, we use variables, arrays, and objects to store our data, and we can manipulate the data the way we want it.</h4>
+                                    <br><br>
+                                    <h4>Switch</h4><br><p><code>
+                                            const color = 'yellow';
+<br>
+<br>                                        switch(color){
+<br>                             &nbsp;&nbsp;&nbsp;             case 'red':
+<br>                                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         console.log('Color is red');
+<br>                                   &nbsp;&nbsp;&nbsp;         break;
+<br>                                 &nbsp;&nbsp;&nbsp;         case 'blue':
+<br>                                &nbsp;&nbsp;&nbsp;    &nbsp;&nbsp;        console.log('Color is blue');
+<br>                                &nbsp;&nbsp;&nbsp;            break;
+<br>                                &nbsp;&nbsp;&nbsp;          default:
+    <br>                               &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;            console.log('Color is not red or blue');<br>
+    &nbsp;&nbsp;&nbsp;            break;
+             <br>
+             //Output: Color is not red or blue
+                                            }
+                                    </code></p><br><br>
+                                      <h4>Conditions</h4><br>
+                                  <p>  <code>
+             if (condition) {
+                <br> &nbsp;&nbsp;//  block of code to be executed if the condition is true
+                <br> } else if (condition){
+                    <br> &nbsp;&nbsp;  //  block of code to be executed if the condition is true
+                    <br>  } else {
+                        <br> &nbsp;&nbsp;   //  block of code to be executed if the condition is false
+                        <br>   }
+            </code></p><br><br><br>
+                                    <h4>Loop</h4>
+                                   <p> <code>
+           <br> for (statement 1; statement 2; statement 3) {
+           <br>  &nbsp;&nbsp;   // code block to be executed
+           <br>   }
+           <br>   for (var i = 0; i < 5; i++) {
+           <br>    &nbsp;&nbsp; text += "The number is " + i;
+           <br>   }
+           <br>   //first statement is we declare a variable to start the iteration from.
+           <br>   //second statement is the condition until the code stops running
+           <br>   //third condition is executed (every time) after the code block has been executed.
+           <br>
+           <br>   //The while loop loops through a block of code as long as a specified condition is true.
+           <br>   while (condition) {
+           <br>  &nbsp;&nbsp;  // code block to be executed
+           <br>  }
+           <br>
+           <br>   while (i < 10) {
+           <br>  &nbsp;&nbsp; text += "The number is " + i;
+           <br>   &nbsp;&nbsp; i++;
+           <br>  }
+           <br><br>
+           //DO WHILE 
+           <br>
+           let i = 100;
+<br>
+<br>do {
+    <br>  &nbsp;&nbsp;console.log('Number ' + i);
+    <br> &nbsp;&nbsp;i++;
+    <br>}
+    <br>
+    <br>while(i < 10);
+   <br> //Output: Number 100
+   <br>//Code inside do block will execute even if the loop condition is false.
+            </code></p>
+            <br><br>
+                                    <h5>Check this <a href="https://www.w3schools.com/js/js_loop_for.asp">source</a> as well.</h5>
+                                    <br><br>
+                                    <h4>Function</h4> <br><p><code>
+                                        function hiThere(){
+                                            <br>    &nbsp;&nbsp;&nbsp;   console.log("Hello world!")
+                                            <br>   }
+                                            <br>   hiThere() //"Hello world!"
+                                            <br>
+                                            <br>   function helloThere(name){
+                                                <br>      &nbsp;&nbsp;&nbsp; console.log("Hello "+name+"!");
+                                                <br>   }
+                                                <br>   helloThere("Edward")//"Hello Edward!"
+                                                <br>name inside helloThere() is what we call argument, it can takes value and passes it to the function.
+<br>
+<br>      (function helloThere(name){ 
+    <br>      &nbsp;&nbsp;   console.log("Hello "+name+"!"); 
+    <br>        })("Edward")
+                                    </code></p>
+                                    <br><br>
+                                   
+                                    <br><br>    <h4>I've learnt every syntax, now what?</h4>
+                                 
+                                </div><br><br><br>
+                                <div class="algorithm-station" id="algorithm">
+                                        <h2>Algorithm Practice Station</h2><br><br>
+                                        <h4>I mainly use <a href="https://www.codewars.com/">codewars</a> and <a href="https://www.freecodecamp.org/">freecodecamp</a> as my source to practice algorithm, there are several other choices like <a href="https://www.codechef.com">codechef</a>, <a href="https://leetcode.com">leetcode</a>, <a href="https://www.tutorialspoint.com/data_structures_algorithms/">tutorialspoint</a>, and <a href="https://www.codecademy.com/learn">codecademy</a>.</h4>
+                                        <br><br> <h4>How to code productively in Algorithm Practice Station</h4>
+                                        <br><br>
+                                        <video controls width="80%" class="center">
+                                            <source src="vids/demo1.mov">
+                                        </video>
+                                        <br><br><br>
+                                        <p style="text-align:center;">You can code your function to do some challenge there, the console will tell you the result and the bug.<br>
+                                            Some code solutions will have white font, highlight it after you finish your solution. </p>
+                                  
+                                        <br><br><br>
+                                        <h4><a href="https://www.codewars.com/kata/string-repeat/train/javascript">String repeat</a></h4>
+                                        <br><br>
+                                       <p> Write a function called repeatStr which repeats the given string string exactly n times.</p>
+                                      <p><code>
+                                        repeatStr(6, "I") // "IIIIII"
+                                      <br>  repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+                                       </code></p><br><br>
+                                       <p>There are a lot of ways to solve this, first is by looping and second is using <a href="https://www.w3schools.com/jsref/jsref_repeat.asp"> repeat</a></p>
+                                       <p>We want to concatenate the string n times and contain it in a variable.</p>
+                                       <p>I will explain using for loop, you can do while loop yourself later </p>
+                                      <p> <code>
+                                            var result = "";
+                                         <br>   for(var i = n; i>0;i--){
+                                            <br>   &nbsp;&nbsp;&nbsp; result += string;
+                                            <br>   }
+                                            <br>   return result;
+                                       </code></p><br>
+                                       <p style="color:#3CA1FF">First statement <code> var i = n; </code> we declare a variable to start the iteration</p>
+                                       <p style="color:#3CA1FF">Second statement <code> i > 0; </code> is the condition until the code stops running. </p>
+                                       <p style="color:#3CA1FF">Third statement <code> i-- </code> runs after the loop has been executed</p>
+                                       <p style="color:#3CA1FF">We want to start our iteration from n, <code> result += string </code> will tell the code to store the value of <code> result+string </code>inside <code>result</code> variable, then we return it later. </p>
+                                       <p style="color:#3CA1FF">If the string is<code> "I"</code> , and<code> var result = ""</code> , then result+ string is now "I"</p>
+                                       <p style="color:#FF7777">result + string is stored in variable result</p>
+                                       <p style="color:#FF7777">var result is now "I"</p>
+                                       <p style="color:#FF7777">result + string will be executed again and again until the second statement (i > 0) is false.</p>
+                                       <p>Well, that was for loop, try doing it with while loop. Remember to <code>i--</code> or <code>n--</code> so the program doesn't run forever.<br>The solution is below, highlight it after you finish it.</p>
+                                       <br><br>
+                                       <p><code style="color:white;"> var result= "";
+                                          <br>  while(n>0){
+                                            <br>   &nbsp;&nbsp;&nbsp;  result += string;
+                                            <br>   &nbsp;&nbsp;&nbsp; n--
+                                            <br>  }
+                                            <br>  return result;</code></p><br><br>
+                                            <p style="color:#FF7777">Basically its the same with for loop, but remember to include <code>n--</code> </p>
+                                            <p style="color:#3CA1FF">If n isn't decremented everytime the code executes, the program won't stop because n will always be higher than 0</p>
+                                       <p style="color:#3CA1FF">The other way beside looping is to use repeat() , here is the solution: </p>
+                                       
+                                     <p>  <code style="color:white">function repeatStr (n, s) {
+                                       <br>&nbsp;&nbsp;&nbsp; return s.repeat(n);
+                                       &nbsp;&nbsp;<br> }</code></p><br>
+                                       <p>If you prefer python</p>
+                                      <p> <code>def repeat_str (repeat, string) {
+                                        <br>&nbsp;&nbsp;&nbsp; return string*repeat;
+                                        &nbsp;&nbsp;<br> }</code></p>
+                                        <br><br> <br><br>
+                                        <h4><a href="https://www.codewars.com/kata/53369039d7ab3ac506000467">Convert boolean values to strings 'Yes' or 'No'.</a></h4>
+                                        <br><br><br>
+                                        <p>Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.</p>
+                                        <p>You want to write a program that return a "Yes" if the bool argument is<code> true</code> and "No" if it's <code>false</code></p>
+                                        <p>This is the challenge that you can solve with simple if-else statement</p>
+                                        <p>Try it yourself and come back here</p>
+                                        <br><br>
+                                        <p>You might do it like this:</p>
+                                       <p> <code>
+                                            if(bool){
+                                         <br>    &nbsp;&nbsp;&nbsp;   return "Yes";
+                                         <br>  } else{
+                                            <br>  &nbsp;&nbsp; &nbsp;   return "No";
+                                            <br>  }
+                                        </code></p>
+                                        <br><br>
+                                        <p style="color:#3CA1FF">That code is not wrong, however there is a faster solution that you can use in Javascript, or even Python has it with different syntax too.<br><br>Code hidden below</p>
+                                       <p> <code style="color:white;">return bool ? 'Yes':'No';</code></p>
+                                            <br><br><br>
+                                            <div>
+                                                <h4>Wait so I dont have to write if elses block here?</h4><br>
+                                                <h5 >Yes, and this is called ternary conditional operator, you only need to take 1 line of code instead writing if elses statement</h5>
+                                              <p>  <code>function findGreater(a, b) {<br>
+                                                    &nbsp; if(a > b) {<br>
+                                                       &nbsp;  &nbsp; &nbsp;  return "a is greater";<br>
+                                                       &nbsp;  }<br>
+                                                        &nbsp; else {<br>
+                                                            &nbsp; &nbsp; &nbsp;  return "b is greater";<br>
+                                                            &nbsp;  }<br>
+                                                      }</code></p>
+                                                <h5>and compared it with</h5><br>
+                                               <p> <code>function findGreater(a, b) {
+                                                        return a > b ? "a is greater" : "b is greater";
+                                                      }</code></p>
+                                                      <br><br>
+                                                      <h5 style="color:#3CA1FF">Here is the syntax</h5><br>
+                                                      <p><code>condition ? statement-if-true : statement-if-false;</code></p>
+                                                </div><br><br>
+                                                <h4><a href="https://www.codewars.com/kata/return-negative/train/javascript">Return Negative</a></h4><br><br>
+                                                <p>In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?</p>
+                                                <p>You already know ternary conditional operator, here is some problem that can be solved with it.</p>
+                                                <p>Here is the solution:</p>
+                                                <p><code style="color:white;">function makeNegative(num) {
+                                                   <br>&nbsp;&nbsp;&nbsp; return num>0? -num:num
+                                                   <br> }</code></p><br><br><p style="color:#3CA1FF">If the number is positive, add a (-) sign, else it doesn't change the value</p>
+                                                   <p style="color:#3CA1FF">Or if you don't want to use the ternary conditonal operator, you can use:</p>
+                                                  <p> <code style="color:white;">function makeNegative(num) {
+                                                    <br>&nbsp;&nbsp;&nbsp; return -Math.abs(num);
+                                                    <br> }</code></p><br><br><p style="color:#3CA1FF">What this code does is basically make the num absolute, and if the num is negative we add (-) sign before the Math.abs(num) </p>
+                                               <br><br><br>
+                                            <h4><a href="https://www.codewars.com/kata/55a2d7ebe362935a210000b2">Find the smallest integer in the array</a></h4><br><br>
+                                                <div>
+                                                    <p style="color:#3CA1FF">Well, first is you read <a href="https://www.w3schools.com/jsref/jsref_obj_math.asp"> this</a>, its about Math in javascript</p>
+                                                    <p>Great! Now you know how to find the smallest integer in the array.</p>
+                                                    <p style="color:#3CA1FF">Read <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">... spread operator here</a> while you're at it</p>
+                                                    <p>ES6 introduces the spread operator, which allows us to expand arrays and other expressions in places where multiple parameters or elements are expected.</p>
+                                                 <p>   <code>
+                                                            var test = [1,2,3,4];
+                                                           <br> console.log(...test) //Output: 1 2 3 4
+                                                    </code></p><br>
+                                                    <p style="color:#3CA1FF">Now, to solve the problem you simply wants to return the lowest one in the array, try it out</p>
+                                                    <p>Here is the solution below</p>
+                                                   <p> <code style="color:white">
+                                                            return Math.min(...args);
+                                                    </code></p>
+                                                    </div><br><br>
+                                                <h4><a href="https://www.codewars.com/kata/5715eaedb436cf5606000381">Sum of positive</a></h4><br><br>
+                                                    <div>
+                                                        <h5>You get an array of numbers, return the sum of all of the positives ones.
+<br>
+<br>                          Example [1,-4,7,12] => 1 + 7 + 12 = 20
+<br>                    
+<br>                    Note: if there is nothing to sum, the sum is default to 0.</h5>
+
+                                                        </div><br><br>
+                                                        <h2><a class="a" href="https://www.freecodeCamp.org/">freeCodeCamp Section</a></h2><br><br>
+                                                    <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/reverse-a-string">Basic Algorithm Scripting: Reverse a String</a></h4><br><br>
+                                                    <h5>Reverse the provided string.
+<br>
+<br>             You may need to turn the string into an array before you can reverse it.
+<br>     
+<br>     Your result must be a string.</h5>
+<p>The solution requires knowledge of <a href="https://www.w3schools.com/jsref/jsref_split.asp">split</a>, <a href="https://www.w3schools.com/jsref/jsref_reverse.asp"> reverse </a>, and<a href="https://www.w3schools.com/jsref/jsref_join.asp"> join</a> methods.</p>
+                                                        <div>
+                                                            <br><br>
+                                                            <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/factorialize-a-number">Basic Algorithm Scripting: Factorialize a Number</a></h4>
+                                                            <br><br>
+                                                            <p>Return the factorial of the provided integer.
+<br>
+<br>  If the integer is represented with the letter n, a factorial is the product of all positive integers less than or equal to n</p>
+                                                            <h5 style="color:#3CA1FF">There is two ways to solve it. First one in the loop and second one is in<a href="https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea"> recursive function</a>.</h5>
+                                                            <p style="color:#FF7777">We want to decrement num and keep multiplying it until it reach one or zero. Try it with loop, the solution is below.<br> Check the explanation if you stuck</p>
+                                                           <p> <code style="color:white;">for(var answer = 1; num > 0; num--){
+                                                                <br>  &nbsp;&nbsp; &nbsp; answer *= num;
+                                                                <br>  }
+                                                                <br>
+                                                                <br>  return answer;</code></p>
+                                                                <p>First, we decrement the num, everytime the loop executes, answer = answer * num , then after num>0 is false, the loop will stop and the program will return answer.</p>
+                                                                <p>for example num = 5
+                                                                        <br>
+                                                                  <br>  5>0 so answer = 1 * 5 , num--
+                                                                  <br>
+                                                                  <br>  4>0 so answer = 5 * 4 , num--
+                                                                  <br>
+                                                                  <br>  and it goes on until 1>0 , after that the program returns answer.
+                                                                </p><br><br>
+                                                                <h5 style="color:#3CA1FF">The other one is by recursive function</h5>
+                                                                <p style="color:#FF7777"><a href="https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea">Recursive</a> is simply when a function calls itself</p>
+                                                                <p><code>return num > 1 ? num * factorialize(num-1);</code></p>
+                                                                <p>factorial(3) returns 3 * factorial(2)
+                                                                   <br><br>     factorial(2) returns 2 * factorial(1)
+                                                                   <br><br>   factorial(1) returns 1 * factorial(0)
+                                                                   <br><br>    factorial(0) returns 1</p>
+                                                                   <p style="color:blue">// 3 * 2 * 1 * 1 = 6</p>
+                                                       <br><br> 
+                                                            <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/basic-algorithm-scripting/confirm-the-ending">Basic Algorithm Scripting: Confirm the Ending</a></h4>
+                                                            <br><img src="img/ending.png" width="90%">
+                                                            <br><br>
+                                                             <br><h5>Try using <a href="https://www.w3schools.com/jsref/jsref_slice_string.asp">slice</a> to extracts parts of a string and returns the extracted parts in a new string. </h5>
+                                                             <p>The challenge wants you to return true or false</p>
+                                                            <p>After you try it yourself, you can see that slice can take arguments of <i>(start, end)</i></p>
+                                                             <p>So to confirm the ending, the ending value of the str must be the same with the target</p>
+                                                             <p>Does the slice have to take both <i>(start, end)</i>? Or 1 if enough? Go try it out</p>
+                                                             <p><code>
+                                                                    var str = "Hello world!"; 
+                                                                 <br>var res = str.slice(5); //Output : world!
+                                                                 //Remember the space
+                                                                 <br>var res = str.slice(6); //Output :world!
+                                                             </code></p>
+                                                             <p>So it doesn't have to take 2 argument, world! is the ending of the Hello world!</p>
+                                                             <p><code>str.slice(5)</code> It can takes one argument, which is the start.</p>
+                                                             <p>"Hello world!" has 12 length if you try <code>console.log("Hello world!".length)</code></p>
+                                                             <p>"world!" has 6 length if you try <code>console.log("world!".length)</code> </p>
+                                                             <p>So <code>str.slice(12-6) === world!</code> is true?</p>
+                                                             <p>Try it yourself , the solution is below.</p>
+                                                             <p><code style="color:white">
+                                                                 return str.slice(str.length - target.length) === target;
+                                                             </code></p>
+                                                           
+                                                       <br> <br> <br>
+                                                       <h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range">Intermediate Algorithm Scripting: Sum All Numbers in a Range</a></h4>
+                                                       <br>
+                                                       <img src="img/sumrange.png" width="80%">
+                                                       <br><br><br><h5>In this section, I will explain some Intermediate Algorithm from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range">freeCodeCamp</a>.</h5>
+                                                       <br> <h5 style="color:#3CA1FF">First, we know we want to know the maximum and minimum of the array to start finding the range, then we sum it and return the value.</h5>
+                                                       <p>Try it yourself, store the highest and lowest in some max or min variables, then go iterate it from min to max then do your best! </p>
+                                                       <p>If you done it, highlight the space below this, the solution has white color.</p>
+                                                       <br><br>
+                                                       <p><code style="color:white;">
+                                                            function sumAll(arr) {
+                                                         <br>  //Find max and min with Math.max() and Math.min()
+                                                         <br>  //Put the index of the array as the argument
+                                                         <br>  var max = Math.max(arr[0],arr[1])
+                                                         <br>  var min = Math.min(arr[0],arr[1])
+                                                         <br>  var sum = 0
+                                                         <br>//We iterate from the lowest to max, then add i into sum
+                                                         <br>  &nbsp;&nbsp; for(var i = min; i < max.length;i++){
+                                                         <br>  &nbsp;&nbsp;&nbsp;&nbsp; sum += i;
+                                                        <br>&nbsp;&nbsp; }
+                                                        <br> return sum;
+                                                         }
+                                                       
+                                                       </code></p>
+  <br><br><h4><a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/missing-letters">Intermediate Algorithm Scripting: Missing letters</a></h4>
+  <br><img src="img/misslater.png" width="90%">
+  <br><br><br><h5 style="color:#3CA1FF">You will need to convert from character to ASCII code using <a href="https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_fromcharcode">fromCharCode()</a> and <a href="https://www.w3schools.com/jsref/jsref_charcodeat.asp">charCodeAt()</a>.</h5>
+  <br><p>Each alphabets have their own unicode, for example A is 65, and in binary 65 is 01000001, which is A</p>
+  <p>To find a missing letter in ABCE, the unicode is 65 66 67 69, so the missing unicode is 68, which is D</p>
+  <p>And that's what you want your code to return.</p>
+  <p>Here is the solution:</p><br><br>
+  <p><code style="color:white">
+        function fearNotLetter(str) {
+    <br>    for(var i = 0; i < str.length; i++) {
+    <br>    &nbsp;    /* code of current character */
+    <br>     &nbsp;   var code = str.charCodeAt(i);
+    <br>   
+    <br>    &nbsp;&nbsp;&nbsp;&nbsp;    /* if code of current character is not equal to first character + no of iteration
+    <br>   &nbsp;&nbsp;&nbsp;&nbsp;    hence character has been escaped */
+    <br>    &nbsp;&nbsp;&nbsp;&nbsp;   if (code !== str.charCodeAt(0) + i) {
+        <br>    
+        <br>    &nbsp;&nbsp;&nbsp;&nbsp;      /* if current character has escaped one character find previous char and return */
+        <br>  &nbsp;&nbsp;&nbsp;&nbsp;        return String.fromCharCode(code - 1);
+        <br>  &nbsp;&nbsp;&nbsp;      }  
+        <br>   &nbsp;&nbsp; }
+        <br>     &nbsp;  return undefined;
+        <br>     }
+        
+  </code></p>
+  <br><br><br>
+  <h4><a href="https://www.codewars.com/kata/514b92a657cdc65150000006">Multiples of 3 or 5</a></h4>
+  <br><br>
+  <p>
+    If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+    <br>
+    <br> Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+  </p><br><br>
+    <div>
+        <p>This kind of function is usually connected with loops, you iterate to certain number with some couple conditions have to be met to return the total.</p>
+        <p>You can also do it with for loops and then use an if else statement inside the loop </p>
+        <p style="color:#3CA1FF">You can manage the condition inside if else statement by using || which is OR, or && which is AND </p>
+        <p style="color:#3CA1FF">OR returns true when one of the condition is met, and AND returns true when both condition met</p>
+        <p>In this case when you iterate from i to number, 1, 2 , 3 ,... number, you want the codes to execute when it's divided by 3 or divided by 5, so we use ||</p>
+        <p>We cant use && because the && only makes your code condition works when i is both divisible by 3 and 5, and we want the code to run when i is divided by either 3 or 5.</p>
+        <p>Here is one of the solution:</p>
+       <p> <code style="color:white">
+                function solution(number){
+              <br>   &nbsp;&nbsp;   var sum = 0;
+              <br>     
+              <br>  &nbsp;&nbsp;  for(var i = 1;i< number; i++){
+              <br>     &nbsp;&nbsp;&nbsp;&nbsp; if(i % 3 == 0 || i % 5 == 0){
+                <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     sum += i
+                <br>   &nbsp;&nbsp;&nbsp;&nbsp;   }
+                <br> &nbsp;&nbsp;    }
+                <br>     return sum;
+                <br>    }
+        </code></p>
+    </div>
+<br><br><br><h4><a href="https://www.codewars.com/kata/523a86aa4230ebb5420001e1">Where my anagrams at?</a> 5 kyu codewars challenge</h4><br>
+<br><p>Write a function that will find all the anagrams of a word from a list. You will be given two inputs a word and an array with words. You should return an array of all the anagrams or an empty array if there are none. For example:</p>
+<br>
+<p>anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']) => ['aabb', 'bbaa']
+    <br>
+   <br> anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']) => ['carer', 'racer']
+   <br>  
+  <br>  anagrams('laser', ['lazing', 'lazy',  'lacer']) => []</p><br><br>
+  <p>First, we want to filter the array words to find if the array words have same letter with the word.</p>
+  <p>An anagram is a word or phrase formed by rearranging the letters of a different word or phrase</p>
+  <p>Here is the solution:</p>
+  <br>
+<p><code style="color:white">
+    function anagrams(word, words) {
+    <br>&nbsp;    return words.filter(e=>{
+        <br>  &nbsp;&nbsp;&nbsp; var anagrams = e.split("").sort().join("")
+        <br>  &nbsp;&nbsp;&nbsp; var testWords = word.split("").sort().join("")
+        <br>     
+        <br>   &nbsp;&nbsp;&nbsp;  return anagrams === testWords
+        <br>   &nbsp;&nbsp;    })
+        <br>  }
+</code></p><br><br>
+<p>Some explanation</p>
+<p>
+<code>return words.filter(e=>{
+    <br>
+    <br>
+}
+</code></p><br><p style="color:#3CA1FF">e is the current element being processed in the array, which is everything inside words array.</p><br>
+<p><code>var anagrams = e.split("").sort().join("")</code></p><br><p>So we store every element inside words array after we <a href="https://www.w3schools.com/jsref/jsref_sort.asp">split()</a> the string inside words, <a href="https://www.w3schools.com/js/js_array_sort.asp">sort()</a> it, and <a href="https://www.w3schools.com/jsref/jsref_join.asp">join()</a> it into anagrams variable</p>
+<br><p>We also need to split the string of word, sort it, join it, and store it to testWords var, after that we check if both variables have same value or not, it will return either true or false. </p><br><br><br>
+<h4><a href="https://www.codewars.com/kata/52597aa56021e91c93000cb0">Moving zeros to the end</a> 5 kyu codewars challenge</h4><br>
+<br><h5>Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.
+
+</h5><br><p><code>moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]</code></p><br><br>
+<p>
+        <a href="https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2"> Read this article on declarative and imperative programming</a><br>
+     There are 2 ways to solve this challenge, an imperative way or declarative way, I'll start with the imperative way.
+</p><br><br><p>First, notice the result. <code>returns[false,1,1,2,1,3,"a",0,0]</code><br> We can separate two arrays, for example array that has zero and array with no zero, then we add the 2 arrays together.</p><br>
+<p style="color:#3CA1FF">We will iterate through the array to check if the value is zero or not, if its zero, we want to store it in array with other zeroes, and if it isnt zero, we want to store it in array with no zeroes, then we can just unite the 2 array together.</p>
+<br><p>We add the array with <a href="https://www.w3schools.com/jsref/jsref_concat_array.asp">concat</a> method</p>
+<p>Here is the imperative solution:</p>
+<p><code style="color:white">
+        var moveZeros = function (arr) {
+      <br>  var result = [];<br>    
+            var zeroes = [];
+            <br>     &nbsp;&nbsp;    for(var i = 0;i<arr.length;i++){
+                <br> <br>       &nbsp;&nbsp;&nbsp;&nbsp;   if(arr[i] !== 0){ 
+                    <br>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        result.push(arr[i]) 
+                    <br>   &nbsp;&nbsp;&nbsp;&nbsp;       }
+                    <br>     &nbsp;&nbsp;&nbsp;&nbsp;     else{ 
+                        <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      zeros.push(arr[i]) 
+              <br>      &nbsp;&nbsp;&nbsp;&nbsp;    }
+              <br>  &nbsp;&nbsp;      }
+              <br>     &nbsp;&nbsp;   return result.concat(zeros)
+              <br>      }
+</code></p><br><br><br>
+<p style="color:#3CA1FF">In the declarative solution, you write code that describes what you want, but not necessarily how to get it (declare your desired results, but not the step-by-step), what we want here is to put an array that has zeroes after array that has no zeroes.</p>
+<p>Here is the declarative solution:</p>
+<p><code style="color:white">
+     var moveZeros = function (arr) {
+    <br>&nbsp;&nbsp;  &nbsp;      return arr.filter(x=>x !== 0).concat(arr.filter(x=>x===0 ))
+    <br>      }
+</code></p><br><p>What this code does is simply find the element inside array, which is x, that isnt zero, and concat it to another array which is an array with zeroes.</p>
+<br><br><br>
+
+
+
+
+
+
+<br><br><br>
+                                                       <h4>Functional Programming</h4><br><br>
+                                                            <p>Functional programming is an approach to software development based around the evaluation of functions. Like mathematics, functions in programming map input to output to produce a result. You can combine basic functions in many ways to build more and more complex programs.</p>  
+
+                                                            <p>Example (Source from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/functional-programming/use-the-reduce-method-to-analyze-data">freeCodeCamp</a>): </p>
+                                                            <p>The variable watchList holds an array of objects with information on several movies. Use reduce to find the average IMDB rating of the movies directed by Christopher Nolan. Recall from prior challenges how to filter data and map over it to pull what you need. You may need to create other variables, but save the final average into the variable averageRating. Note that the rating values are saved as strings in the object and need to be converted into numbers before they are used in any mathematical operations.</p>
+                                                            <br><br>
+                                                           <p> <code>
+                                                                    var watchList = [
+                                                               <br>    {  
+                                                               <br>    &nbsp;&nbsp;  "Title": "Inception",
+                                                              
+                                                               <br>    &nbsp;&nbsp;  "Director": "Christopher Nolan",
+                                                               <br>    &nbsp;&nbsp;  "imdbRating": "8.8",
+                                                             
+                                                               <br>   },
+                                                               <br>   {  
+                                                               <br>     &nbsp;&nbsp; "Title": "Interstellar",
+                                                             
+                                                            
+                                                             
+                                                               <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "8.6",
+                                                              
+                                                               <br>   },
+                                                               <br>   {
+                                                               <br>     &nbsp;&nbsp; "Title": "The Dark Knight",
+                                                             
+                                                               <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "9.0",
+                                                             
+                                                               <br>   },
+                                                               <br>   {  
+                                                               <br>     &nbsp;&nbsp; "Title": "Batman Begins",
+                                                            
+                                                               <br>     &nbsp;&nbsp; "Director": "Christopher Nolan",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "8.3",
+                                                              
+                                                               <br>   },
+                                                               <br>   {
+                                                               <br>     &nbsp;&nbsp; "Title": "Avatar",
+                                                             
+                                                               <br>     &nbsp;&nbsp; "Director": "James Cameron",
+                                                               <br>     &nbsp;&nbsp; "imdbRating": "7.9",
+                                                                 
+                                                                  
+                                                                 
+                                                                  
+                                                               <br>   }
+                                                   ];
+                                                   
+                                                   <br><br>
+                                                   //Put your code here <br>
+                                                   var averageRating = watchList.filter(e => e.Director === "Christopher Nolan").<br>map(e => Number(e.imdbRating)).<br>reduce((e1, e2) => e1 + e2) / watchList.filter(e => e.Director === "Christopher Nolan").length;
+                                                   
+                                                   <br> <br>
+                                                   
+                                                   console.log(averageRating); // 8.675
+                                                            </code></p> <br><br><br>
+                                                            <h3>What is going on here?</h3>
+                                                            <br><br>
+                                                            <h5>So first, you store your code inside a variable <code>averageRating</code>, then you filter, filter can do (e=>{}) because its a <a href="https://medium.com/javascript-scene/higher-order-functions-composing-software-5365cf2cbe99">higher order function</a>, its called higher order function because you take function as an argument inside your filter function, <code>e => e.Director === "Christopher Nolan"</code>.(=>) is an ES6 arrow function, it's basically the same as <code>function(e){ // }</code> , and in the inside it wants to access the director that equals with Christopher Nolan, remember " " for the string. </h5>
+                                                            <br>
+                                                            <h5 style="color:#3CA1FF">Did that line of code just filtered all films that was directed by Christopher Nolan?</h5>
+                                                            <br>
+                                                            <p><code>var averageRating = watchList.filter(e => e.Director === "Christopher Nolan");</code></p>
+                                                            <br>
+                                                            <br>
+                                                            <p>Let's test it by <code>console.log(averageRating)</code>. you can do copy paste the code and run it in developer tool in Chrome too.</p>
+                                                            <br><br>
+                                                            <img src="./img/averageRating.png" width="90%">
+                                                            <br><br>
+                                                            <p>It returns <code>[object Object],[object Object],[object Object],[object Object]</code></p>
+                                                            <p style="color:#FF7777">The 0, 1, 2, 3 are the index of the watchList array that is directed by Christopher Nolan.</p>
+                                                            <p style="color:#FF7777">The object can be expanded to show the title until imdbRating.</p>
+                                                            <p style="color:#3CA1FF">But what if you dont need all those data and you only want the title?</p>
+                                                            <p style="color:#3CA1FF">We have to filter the director first and creates new array that returns the title's of the director that has been filtered<br>
+                                                            Code hidden below</p>
+                                                            <p>
+                                                            <code style="color:white">var filteredList = watchList.filter((e) => e["Director"] === "Christopher Nolan")<br>.map(e=>{ 
+                                                                  return {title: e["Title"]} 
+                                                                    <br> })</code> </p>
+                                                                   <br>  <p style="color:#3CA1FF">I changed the var name into filteredList</p><br>
+                                                                   <h5>What happened inside filteredList?</h5><br><h5 style="color:#FF7777">First, watchList.filter is used to creates new array that passes e["Director"] === "Chistopher Nolan". After that,<code> .map</code> creates new array with the results of calling a provided function on every element in the calling array.</h5>
+                                                                
+                                                                   <h5><a href="https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0">Check how functional programming works</a>.</h5>
+                                                                <p>Now see the output of the code.</p><br>
+                                                                <img src="./img/filteredList.png" width="90%">
+                                                            <p><code>
+                                                                 <br> 0: {title: "Inception"}
+                                                                 <br> 1: {title: "Interstellar"}
+                                                                 <br> 2: {title: "The Dark Knight"}
+                                                                 <br> 3: {title: "Batman Begins"}
+                                                            </code></p><br><br>
+                                                            <h5 style="color:#3CA1FF">Now lets go to <code>.map(e => Number(e.imdbRating))</code> part, the averageRating in the challenge hasn't been explained.</h5><br><br>
+                                                            <p><a href="https://www.w3schools.com/jsref/jsref_number.asp">Number()</a> is a Javascript method to convert variables to numbers. So if you see carefully, imdbRating has data typeof string, indicated by " ". To calculate the average, you have to change it to number. Map helped you to convert all the imdbRating property inside the array to number with that single line of code.</p><br>
+                                                            <h5 style="color:#3CA1FF">What about <br><br> <code>reduce((e1, e2) => e1 + e2) / watchList.filter(e => e.Director === "Christopher Nolan").length;</code>?</h5>
+                                            
+                                                            <p style="color:#3CA1FF">Well, we can see the division math operator, so this is the part where the code calculate the average by using <a href="https://www.w3schools.com/jsref/jsref_reduce.asp">reduce</a>.</p>
+                                                            <p style="color:#FF7777">In the first part, they simply sum all the imdbRating that we just mapped before, and then we divide it with the length of an array that was directed by Christopher Nolan, which is 4, from 0 , 1 , 2, 3 indexes.</p>
+                                                            <p>Yep, just that. It saves both time and space.</p>
+                                                           <br><br>
+                                                            <p><a href="https://medium.com/@joomiguelcunha/learn-map-filter-and-reduce-in-javascript-ea59009593c4">Map, filter, and reduce article</a> to help you code in functional way. <a href="www.freecodecamp.org">freeCodeCamp</a> also has a functional programming curriculum that you should learn from.</p>
+                                                        </div><br><br> 
+                                                        <br><br> <h4>Regular Expression</h4><br><br><br>
+                                                        <p style="color:#3CA1FF">Regular expressions are special strings that represent a search pattern. Also known as "regex" or "regexp", they help programmers match, search, and replace text</p>
+                                                        <p style="color:#FF7777">Regex starts with / and end with / too.</p>
+                                                        <p>Example (Source from <a href="https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker">freeCodeCamp</a>)</p>
+                                                        <p>Return true if the given string is a palindrome. Otherwise, return false.
+
+                                                          <br>  A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.
+                                                            
+                                                          <br>  Note
+                                                          <br> <br>   You'll need to remove all non-alphanumeric characters (punctuation, spaces and symbols) and turn everything into the same case (lower or upper case) in order to check for palindromes.
+                                                            
+                                                          <br>  We'll pass strings with varying formats, such as "racecar", "RaceCar", and "race CAR" among others.
+                                                            
+                                                          <br>  We'll also pass strings with special symbols, such as "2A3*3a2", "2A3 3a2", and "2_A3*3#A2".
+                                                          <br><br>
+                                                          <p style="color:#FF7777">Solution:</p>
+                                                          <br>
+                                                         <p> <code style="color:white">
+                                                          function palindrome(str) {
+                                                         <br>&nbsp;&nbsp;   return str.replace(/[\W_]/g, '').toLowerCase() ===
+                                                         <br> &nbsp;&nbsp;        str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');
+                                                          }
+                                                        </code></p><br><br>
+                                                        <p style="color:#3CA1FF">Imagine writing 2 line of code that check if race cAr(ignore case) is palindrome or not, <a href="https://dev.to/catherinecodes/a-regex-cheatsheet-for-all-those-regex-haters-and-lovers--2cj1">regex</a> is worth to master.</p>
+                                                        <h5>What is <code>str.replace(/[\W_]/g, '').toLowerCase()</code></h5>
+                                                        <p style="color:#3CA1FF">First, we want the argument (str) to replace everything that matches with /[\W_]/g with ''.</p>
+                                                        <p style="color:#FF7777">/[\W_]/g</p>
+                                                        <p style="color:#3CA1FF">\W Matches any character that is not a word character (alphanumeric & underscore)</p>
+                                                        <p style="color:#3CA1FF">_ matches with "_" character</p>
+                                                        <p style="color:#3CA1FF">g after the regex is a flag, there are many types of flags, and g is a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp">flag</a> for global which  find all matches rather than stopping after the first match</p>
+                                                        <h5>Now for <code>str.replace(/[\W_]/g, '').toLowerCase().split('').reverse().join('');</code>, its the same thing.</h5>
+                                                        <p style="color:#3CA1FF">The code will ignore the cases by using toLowerCase(), and then it will return true if its ===.</p>
+                                                        <p style="color:#FF7777">Best <a href="https://regexr.com/">regex source</a> that explains the regex you wrote and give example of your regex.</p>
+                                                        <br><br>
+                                                        <h4>Object oriented Programming</h4><br><p><a href="https://youtu.be/hdI2bqOjy3c?t=3565">Source</a> to learn Object oriented Programming, you can also use freeCodeCamp's curriculum</p>
+                                                        <p>This section will be updated in the future, for now check out the link for Javascript crash course.</p>
+<br><br><br>
+                                                        <h4>DOM</h4>
+                                                        <br>
+                                                        <p>So you've achieved this far deep place in the website.<br>You have seen regular expression that makes programmer expression's bar set from normal into 'that' expression .<br>You have gained the knowledge of functional programming and did a lot of algorithms practice.<br>No more looking at codes here, you done well. Time for the entertainment you deserved.</p>
+                                                        <br>
+                                                        <p id="show" class="test">SHAZAM!!!</p><br><br>
+                                                        <form>
+                                                        <button onclick="buttonOne()" style="color:#FF7777;text-align: center;" type="button"class="btn btn-danger m">The magician chose you, obtain your magic</button> <br><br>
+
+                                                        <button onclick="buttonTwo()" style="color:#FF7777" type="button"class="btn btn-primary m">Give your magic away</button>
+                                                        <br><br>
+                                                        <input id="asd" class="btn btn-info" type="text" style="text-align:center;font-size: 1.2rem;font-weight: 600;"placeholder="Type 'I want to fly across the galaxy' here..." ><br><br><br>
+                                                       <button class="m btn btn-primary" style="color:#FF7777" type="button" onclick="buttonFour()">One last time, click it again one last time</button><br><br>
+                                                        <button onclick="buttonThree()" style="color:#FF7777" type="button"class="m btn btn-danger">The dark color shalt be purified ..bring back the light</button>
+                                          <br><br>
+                                         <p id="light" style="text-align:center;">Everything dark turns from pixels to white pixels.<br>Wait 8 seconds to respawn, the light will show you what to do.<br>No more white fonts telling you what to do.<br>Believe the light will come.</p>
+                                                     
+                                                    </form><br>
+                                                    
+                                                    <p>This magic skills are one of the great Javascript power, it can turns everything I want into a reality in every scenario. <br>Alright at least you feel entertained, right? Check out <a href="https://edwardtanoto.github.io/funStation/index.html">funStation</a> for RPG game with Javascript.</p>
+                                                  
+                                                    <p><a href="https://www.w3schools.com/js/js_htmldom.asp">Read some articles</a> to have ideas on DOM.</p>
+                                </div>
+                                
+                                <div class="tips" id="source">
+                                        <h3>Well that was a long way. What to do now? </h3><br><h5 style="color:#FF7777">You don't have to master 5 languages from the start, most programming language have same foundation, the only thing that is different is the syntax and you will be fine learning other languages after you master 1 language.</h5> <br><h4>Create a project. I recommend finishing all freecodecamp's project on responsive web and javascript's algorithm and data structure first since you will learn the basic and something like functional programming and regular expression, which needs a lot of practice to master, but has a very high reward after you understand and implement it.
+                                        </h4><h4 style="color:#3CA1FF">You can ask the community for help if you stuck doing something</h4>
+                                        <h4>Psst.. wanna do some Python?</h4>
+                                        <h3>Do some python here <a href="https://repl.it/@EdwardTanoto/learnpython">https://repl.it/@EdwardTanoto/learnpython</a>, I put a lot of sources there as well</h3>
+                                    <br><br>  <h4 style="float:right"><a href="https://discord.gg/ZEvEnEj">Join Code Zone community here</a></h4><br><br>
+                                    <iframe src="https://discordapp.com/widget?id=562608841003630612&theme=dark" width="340" height="470" style="float:right;" allowtransparency="true" frameborder="0" ></iframe>
+                                   
+                                    <h2>Great source to learn</h2>
+                                  
+                                    <br><br>
+                                    <h5><a href="https://stackoverflow.com/">stackoverflow</a> is the biggest coding community, you can ask and get answers to your problem here.</h5>
+                                    <h5><a href="https://repl.it/">repl.it</a> is a place to run your code, and also has a community</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UC8butISFwT-Wl7EV0hUK0BQ">freeCodeCamp</a> youtube for a <a href="https://www.freecodecamp.org/forum/">community</a>.</h5>
+                                    <h5><a href="https://www.youtube.com/user/cs50tv/featured">cs50</a> youtube, cs50 also has <a href="https://www.edx.org/course/cs50s-introduction-computer-science-harvardx-cs50x">edX</a> courses for computer science content.</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA">Traversy Media</a> youtube. He makes web development content.</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UC2D6eRvCeMtcF5OGHf1-trw">CodeWithChris</a> youtube for iOS development content</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UCfzlCWGWYyIQ0aLC5w48gBQ">sentdex</a> youtube. He also has python programming content <a href="https://pythonprogramming.net/">here</a>.</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UCxX9wt5FWQUAAz4UrysqK9A/featured">CSDojo</a> youtube. He teaches some algorithm and data structure.</h5>
+                                    <h5><a href="https://codegym.cc/">CodeGym</a>. An interactive web that teaches Java.</h5>
+                                    <h5><a href="https://www.youtube.com/channel/UC4xKdmAXFh4ACyhpiQ_3qBw/featured">Tech Lead</a> youtube. An ex-google engineer showing you how its done.</h5>
+                                    <h5><a href="https://www.w3schools.com/">w3schools</a> is very reliable when you don't know the method that is used.</h5>
+                                    <br><br>
+
+                                    <h3 style="color:#3CA1FF">Developing a project.</h3><br><br>
+                                    <h4>Develop your website</h4>
+                                    <h5>Start by creating HTML and CSS website first, get started with bootstrap as well.</h5>
+                                    <h5>After that create github account and do your first commit, you can ask me or the community for help.</h5>
+                                    <h5>Everyone now can access your website , for example <a href="https://edwardtanoto.github.io">https://edwardtanoto.github.io</a> </h5>
+                                    <br><br>
+                                    <p>HTML, CSS, Javascript are tools that we use to create something, everytime you want to create something, start with why, since it will become your motivation to not stressed out and have fun programming.</h3>
+                                    <p>Done thinking? Now imagine you want to make a game, how will the system work? How do you want the system to work? And what needs to be done to make everything work? You write everything in a docs or a note.</p>
+                                    <p>Great, now you know how the game works. Next step is to break everything down to little part, for example the characters, the place where the game is played, the scoring system, the skills of the characters, how the players will send an input, and every single thing. </p>
+                                    <p>Things now starting to get clearer. Characters are variables, scoring system and skills are function, inputs are part of HTML.</p>
+                                    <p>You also want to think logically on how it works, since you don't want to get stuck a year trying to make something that isnt well planned.</p>
+                                    <br><br>
+                                    <br><br><br><br><br><br>
+                                    <h3>Last updated 8 April 2019 </h3>
+                                    <br><br>
+                                </div>
+                                <footer class="row-footer" style="color:#FF5D4A">
+
+                                        <a href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:32px; text-align:center;color:#FF5D4A" aria-hidden="true"></i></a>
+                                           &nbsp;&nbsp;&nbsp; <a href="https://github.com/edwardtanoto"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;color:#FF5D4A"></i></a>&nbsp;&nbsp;<a href="#codezone" style="color:#FF5D4A"> edwardtanoto</a>
+                                     </footer>  
+                            </div>
+                           
+                                       
+</body>
+</html>

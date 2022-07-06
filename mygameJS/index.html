@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+	<title>Eight Armies</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<script src="main.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" target="_blank" href="https://github.com/edwardtanoto/edwardtanoto.github.io/tree/master/mygameJS"><i class="fa fa-github" aria-hidden="true" style="font-size:32px;"></i></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+				  <ul class="navbar-nav">
+					<li class="nav-item">
+							<a class="nav-link header" href="#info" style="color:white">Info</a>	  
+					</li>
+					<li class="nav-item">
+							<a class="nav-link header" href="" onclick="reset()" style="color:white">Reset</a>
+					</li>&nbsp;&nbsp;
+					<li class="nav-item">
+						<a href="mailto:edwardt.dev@gmail.com?subject=Hi There!"><i class="fa fa-envelope-o"style="font-size:2rem;" aria-hidden="true"></i></a>
+					</li>
+				  </ul>
+				</div>
+				</div>
+			  </nav>
+		<div class="xop-section"style="margin-top:0;">
+				<h1>Eight Armies</h1> <h5 style="color:#D4D4D3  ">Original Board Game</h5>
+	 <ul class="xop-grid">
+	   <li>
+		 <div class="xop-box xop-img-1">
+		   
+		   <div class="xop-info">
+				<form id="myform">
+						<br>
+						<br>
+						<input type="password" id="myInput0" maxlength="4" placeholder="P1 here...">
+						<br><br>
+						<input type="password"id="myInput1" maxlength="4"placeholder="P2 here...">
+						<br>
+						<button id="submitId" type="button"class="btn btn-outline-secondary" onclick="countScore(this, 0)">Submit</button> &nbsp; &nbsp;
+						<input id="result1">
+						</form>
+						<br>
+						
+						<input type="checkbox" onclick="myFunction(0)"> Show Area  &nbsp; &nbsp;
+						<input type="checkbox" onclick="myFunction(1)"> Show Area
+						</div>
+		 </div>
+	   </li>
+	   <li>
+		 <div class="xop-box xop-img-2">
+		  
+		   <div class="xop-info">
+				<form id="myform">
+					<br>
+					<br>
+						<input type="password" id="myInput2" maxlength="4" placeholder="P1 here...">
+						<br><br>
+						<input type="password"id="myInput3" maxlength="4" placeholder="P2 here...">
+						<br>
+						<button id="submitId" type="button" class="btn btn-outline-secondary" onclick="countScore(this, 2)">Submit</button> &nbsp;
+						&nbsp;
+						<input id="result3">
+						</form>
+						<br>
+						
+						<input type="checkbox" onclick="myFunction(2)"> Show Area  &nbsp; &nbsp;
+						<input type="checkbox" onclick="myFunction(3)"> Show Area
+					</div>
+		 </div>
+	   </li>
+	   <li>
+		 <div class="xop-box xop-img-3">
+		  
+		   <div class="xop-info">
+				<form id="myform">
+						<br>
+						<br>
+						<input type="password" id="myInput4" maxlength="4" placeholder="P1 here...">
+						<br><br>
+						<input type="password"id="myInput5" maxlength="4" placeholder="P2 here...">
+						<br>
+						<button id="submitId" type="button"class="btn btn-outline-secondary" onclick="countScore(this, 4)">Submit</button>  &nbsp; &nbsp;
+						<input id="result5">
+						</form>
+						<br>
+						
+						<input type="checkbox" onclick="myFunction(4)"> Show Area  &nbsp; &nbsp;
+						<input type="checkbox" onclick="myFunction(5)"> Show Area
+						</div>
+		 </div>
+	   </li>
+	   <li>
+		 <div class="xop-box xop-img-4">
+		   
+		   <div class="xop-info">
+			 <form id="myform">
+					<br>
+					<br>
+					<input type="password" id="myInput6" maxlength="4" placeholder="P1 here...">
+					<br><br>
+					<input type="password"id="myInput7" maxlength="4" placeholder="P2 here...">
+					<br>
+					<button id="submitId" type="button"class="btn btn-outline-secondary" onclick="countScore(this, 6)">Submit</button>  &nbsp; &nbsp;
+					<input id="result7">
+					</form>
+					<br>
+					
+					<input type="checkbox" onclick="myFunction(6)"> Show Area  &nbsp; &nbsp;
+					<input type="checkbox" onclick="myFunction(7)"> Show Area
+					</div>
+		 </div>
+	   </li>
+	   
+	 </ul>
+	
+</div>
+<div id="carouselExampleIndicators" class="carousel slide" data-interval="2000" data-ride="carousel">
+	<ol class="carousel-indicators">
+	  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+	  <li  data-target="#carouselExampleIndicators"data-slide-to="4"></li>
+	  <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+	  <li  data-target="#carouselExampleIndicators"data-slide-to="6"></li>
+	  <li  data-target="#carouselExampleIndicators"data-slide-to="7"></li>
+	  <li  data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+	</ol>
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+		<img class="d-block w-100" src="CardPNG/KingCard.png" width="10%" alt="First slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/QueenCard.png" width="10%"alt="Second slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/AssassinCard.png"width="10%"alt="Third slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/CavalryCard.png"width="10%" alt="Fourth slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/RebelCard.png"width="10%" alt="Fifth slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/SniperCard.png" width="10%"alt="Sixth slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/PawnCard.png"width="10%" alt="Seventh slide">
+	  </div>
+	  <div class="carousel-item">
+		<img class="d-block w-100" src="CardPNG/BomberCard.png"width="10%" alt="Eighth slide">
+	  </div>
+
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="sr-only">Next</span>
+	</a>
+  </div>
+  <br>
+  <br>
+<div id="info">
+		<div class="row">
+<div class="col-md-3">
+
+	<h3 style="margin-top:4%">Information</h3>
+	<li>Put input into the box(K,C,Q)</li>
+	<li>Use caps lock for the input</li>
+	<li>Remember, fill 4 character per area</li>
+	<li>You can choose 10 of all character</li>
+	<li>Each character's quantity is written beside each points</li>
+	<li>Winner is the player who win more area</li>
+	<li>You can add unrelated letter to input to confuse your opponent with max 4 chars</li>
+	<li>The letter must not be the symbol of classes to make the game fair</li>
+	<li>Good luck have fun</li>
+</div>
+<div class="col-md-3">
+	<h3>Scores</h3>
+	<li>(K)ing= 5 (1)</li>
+	<li>(Q)ueen= 5 (1)</li>
+	<li>(C)avalry= 20 times enemy pawns (1)</li>
+	<li>(A)ssassin=5;(autowin when 1 vs 1) (1)</li>
+	<li>(S)niper=35(1)</li>
+	<li>(P)awns=@1;(4 Pawns in an area will raise the points into 30 (4)</li>
+	<li>(R)ebel=1;(autowin vs royalty if teamed up with 2 pawns or more) (1)</li>
+	<li>(B)omber= Win the area. A trump card that only can be countered with draw (1)</li>
+</div>
+<div class="col-md-3">
+	<h3>Skills</h3>
+	<li>King in presence with Queen make total points of 30</li>
+	<li>4 Pawn gathers in 1 area make total point of 40</li>
+	<li>Assassin will perform instant kill when 1 vs 1 in an area</li>
+	<li>Bomber nukes whole area</li>
+	<li>Rebel wins the area if there is an enemy royalty such as King and Queen and teamed up with 2 pawn.</li>
+</div>
+	<div class="col-md-3"><h3>Rules</h3>
+	<li>Game system by round plays.
+	<li>P1 moves first then P2 for first area.</li>
+	<li>P2 moves first then P1 for second area, and goes on.</li>
+	<li>After each player submit their moves, reveal the area to declare the winner.</li>
+	<li>You can predict what chars havent been used and outplay the enemy.</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

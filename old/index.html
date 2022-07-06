@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="images/icon.ico" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="google-site-verification" content="5Akjk43erLUQqN5iA1p6fWRhtEcsZGJqU3WilwfagdA" />
+    <meta name="description" content="Edward Tanoto">
+    <meta name="keywords" content="Edward Tanoto">
+    <link rel="stylesheet" href="style.css">
+    <title>Edward Tanoto</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fonts -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Hind&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+                <div class="circle"></div>
+                <div class="circle"></div>
+    </div> 
+    <div class="main main-container" id="home">
+       <!--Render all bg first-->
+        <img id="bg" src="./images/bg2.jpg" alt="bg">
+        <img id="bg" src="./images/night.jpg" alt="bg">
+        <img id="bg" src="./images/bg4-night.jpg" alt="bg">
+        <img id="bg" src="./images/bg4.2_2.jpg" alt="bg">
+        <!-- Sidebar -->
+        	<i class="fa fa-bars toggle_menu opacity_one"></i>
+            <div class="sidebar_menu hide_menu">
+                    <i class="fa fa-times"></i>
+                    <center>
+                       <br>
+                        <a href="#">
+                            <h1 class="boxed_item">EDWARD TANOTO</h1></a>
+                            
+                        <h2 class="logo_title">Software Developer</h2>
+                    </center>
+            
+                    <ul class="navigation_section">
+                        <li class="navigation_item" id="#profile">
+                            <a href="#skill" class="b"> <i class="fa fa-user" aria-hidden="true"></i> PROFILE</a>
+                        </li>
+                        <li class="navigation_item" id="#blog">
+                            <a href="https://creativezone.herokuapp.com/" target="_blank" class="b"> <i class="fa fa-code" aria-hidden="true"></i> BLOG</a>
+                        </li>
+                        <li class="navigation_item" id="#portfolio">
+                            <a href="./cv.pdf" target="_blank" class="b"><i class="fa fa-github" aria-hidden="true"></i> CV</a>
+                        </li>
+                    </ul>
+            
+                    <center>
+                        <a href="mailto:edwardt.dev@gmail.com?Subject=Hi There!"><h1 class="boxed_item boxed_item_smaller signup">
+                        <i class="fa fa-envelope"></i>
+                            MAIL ME
+                        </h1></a>
+                        <br>
+                        <div class="language">
+                          <i class="fa fa-language" aria-hidden="true"></i>
+                          <a class="language-sub" href="/">EN</a>  - <a class="language-sub" href="./cn.html">CN</a> 
+                        </div>
+                       
+                    </center>
+                   
+                </div>
+            <!-- End of sidebar -->
+            <div class="toggleWrapper">
+                    <input type="checkbox" class="dn" id="daynight"/>
+                    <label for="daynight" class="toggle">
+                      <span class="toggle__handler">
+                        <span class="crater crater--1"></span>
+                        <span class="crater crater--2"></span>
+                        <span class="crater crater--3"></span>
+                      </span>
+                      <span class="star star--1"></span>
+                      <span class="star star--2"></span>
+                      <span class="star star--3"></span>
+                      <span class="star star--4"></span>
+                      <span class="star star--5"></span>
+                      <span class="star star--6"></span>
+                    </label>
+                  </div>
+
+        <!-- Intro -->
+        <div class="content" id="intro">
+            <div class="about">
+                <h2 class="job-title">Programmer</h2> <h2 class="job-title separator">-</h2> <h2 class="job-title">Designer</h2> <h2 class="job-title separator">-</h2> <h2 class="job-title">Creative</h2>
+                <h1 class="name-title">EDWARD TANOTO 
+                 <span class="intro-socials"> <a target="_blank" href="https://www.linkedin.com/in/edwardtanoto/"><i class="fa fa-linkedin d"></i></a>&nbsp;&nbsp;<a target="_blank" href="https://github.com/edwardtanoto"><i class="fa fa-github d"></i></a></span>
+                </h1> 
+                                                                    
+                                                                    
+                <p class="summary"></p>
+                <p class="header-text"></p>
+            </div>
+        </div>
+        <!-- Intro -->
+
+        <!-- Skills -->
+        <div class="content" id="skill">
+               
+                        <div id="profile-section">
+                          <br>
+                          <br>
+                                <div class="container">
+                                    <div class="opening">
+                                      <img src="images/me.jpg" class="rounded" width="250px"/>
+                                    </div>
+                                    <br>
+                                    <div id="profile-body">
+                                            <div class="profile-header  w-75">
+                                              <div>
+                                                    <div class="d-flex flex-row text-white align-items-stretch text-center">
+                                                      <div class="port-item p-4 bg-primary pointer flex-sm-fill" data-toggle="collapse" data-target="#about-me">
+                                                        <i class="fa fa-home d-block"></i>
+                                                      </div>
+                                                      <div class="port-item p-4 bg-warning pointer flex-sm-fill"  data-toggle="collapse" data-target="#resume">
+                                                        <i class="fa fa-folder-open d-block"></i>
+                                                      </div>
+                                                      <div class="port-item p-4 bg-success pointer flex-sm-fill"  data-toggle="collapse" data-target="#work">
+                                                        <i class="fa fa-code d-block"></i>
+                                                      </div>
+                                                      <div class="port-item p-4 bg-danger pointer flex-sm-fill"  data-toggle="collapse" data-target="#contact">
+                                                        <i class="fa fa-envelope d-block"></i>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                  </div>
+                                                    <!-- ABOUT ME -->
+                                                      <div id="about-me" class="collapse">
+                                                            <div class="card card-body bg-primary text-white py-5 profile-content">
+                                                              <h2>Who am I ?</h2>
+                                                              <br>
+                                                              <p class="lead">
+                                                                  Edward Tanoto is a young, dedicated, and passionate programmer. In his young age he seeks and build experience in the world of web development, iOS app development, version control with git and github, programming with python, and still have room for more. 
+                                                              <br><br>
+                                                              Edward finished his IGCSE in 5 months, had A* on various subjects like additional mathematics and physics, A on mathematics, he works in : 
+                                                            </p>
+                                                              <ul>
+                                                                <li>Web Development - HTML-CSS-JS-Express.js-React-Redux-Node.js</li>
+                                                                <li>App Development - Swift-Xcode-Flutter</li>
+                                                                <li>Database - Firebase, MongoDB, sqlite3</li>
+                                                                <li>Data Science - Python</li>
+                                                              </ul>
+                                                                  <br>
+                                                                  <p class="lead">
+                                                                  Mr. Edward is currently seeking opportunities to learn real world experience through internship programs, and also looking to network with other people of same passions, and can be reached at edwardt.dev@gmail.com .
+                                                              </p>
+                                                            </div>
+                                                            <div class="card card-body py-5">
+                                                              <h4>Fast Learner</h4>
+                                                              <div class="progress mb-3">
+                                                                <div class="progress-bar bg-success" style="width:100%"></div>
+                                                              </div>
+                                                              <h4>Problem Solver</h4>
+                                                              <div class="progress mb-3">
+                                                                <div class="progress-bar bg-success" style="width:100%"></div>
+                                                              </div>
+                                                              <h4>Presentation</h4>
+                                                              <div class="progress mb-3">
+                                                                <div class="progress-bar bg-success" style="width:100%"></div>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                            <!-- RESUME -->
+                                                          <div id="resume" class="collapse">
+                                                                <div class="card card-body bg-warning profile-content py-5">
+                                                                  <h2>My Resume  <span><a href="https://www.codewars.com/dashboard"><img src="https://www.codewars.com/users/edwardtanotoo/badges/micro" alt="codewars"></a></span></h2>
+                                                                  <p>Education and Experience</p>
+                                                                </div>
+                                                          
+                                                                <div class="card card-body py-5">
+                                                                  <h3>Experience</h3>
+                                                                  <p>I started to code intensively since 17, and the idea of being able to create anything makes me love it more than most of the things.</p>
+                                                                  <div class="card-deck">
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <h4 class="card-title"><a class="c" target="_blank" href="https://creativezone.herokuapp.com/">CreativeZone</a> </h4>
+                                                                        <p class="card-text">
+                                                                               <a href="https://news.harvard.edu/gazette/story/2017/05/mark-zuckerbergs-speech-as-written-for-harvards-class-of-2017/"> Mark Zuckeberg</a> once said "But it’s not just about money. You can also give time. I promise you, if you take an hour or two a week — that’s all it takes to give someone a hand, to help them reach their potential" on his Harvard speech. <br> Link have been provided as a credibility
+<br><br>
+                                                                            Creative Zone is a place where we talk about technology.
+                                                                          <br>We talk about programming tips, some machine learning, and some algorithms.</p>
+                                                                        <p class="p-2 mb-3 bg-dark text-white">
+                                                                          Position: Tutor
+                                                                        </p>
+                                                                        <p class="p-2 mb-3 bg-dark text-white">
+                                                                          <a style="color:cornflowerblue" href="https://edwardtanoto.github.io/educationstation/index.html">Website on my learning documentation</a><br>
+                                                                          <a style="color:cornflowerblue" href="https://creativezone.herokuapp.com">Social media for the community</a>
+                                                                        </p>
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <h6 class="text-muted">Dates: 2019</h6>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <h4 class="card-title">Science Olympiad in Informatics - Computer Club</h4>
+                                                                        <p class="card-text">
+                                                                            I join Computer Club in my high school, loved the challenges! <br>
+                                                                            <br>
+                                                                            This is the only computer science experience I've learned in high school, as my school's curriculum only teaches microsoft office for IT subjects. We learned Free Pascal, and attend school for every Saturday.
+                                                                            <br>
+                                                                            It was an amazing experience to participate in such events.
+                                                                          </p>
+                                                                        <p class="p-2 mb-3 bg-dark text-white">
+                                                                          Position: Student
+                                                                        </p>
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <h6 class="text-muted">Dates: 2016</h6>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="card card-body py-5">
+                                                                  <h3>Education</h3>
+                                                                  <p>I love computer science and programming, and actively learning more valuable skillsets.</p>
+                                                                  <div class="card-deck">
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <h4 class="card-title">University Of Nottingham Ningbo</h4>
+                                                                        <p class="card-text">School Of Computer Science freshman.</p>
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <h6 class="text-muted">Dates: 2019 - 2023</h6>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <h4 class="card-title">Self Taught</h4>
+                                                                        <p class="card-text">After 5 months of IGCSE, I've invested myself in 10 months to teach myself how to program. </p>
+                                                                       
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <h6 class="text-muted">Dates: 2018-2019</h6>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <h4 class="card-title">BSP</h4>
+                                                                        <p class="card-text">I feel the need to learn more about programming, something I only capable of doing outside schooltime. I Took IGCSE, Earned A* in various subjects like Additional Mathematics and Physics, and A in Mathematics.</p>
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <h6 class="text-muted">Dates: 2018</h6>
+                                                                      </div>
+                                                                    </div>
+                                                          
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <h4 class="card-title">SMAK 1 PENABUR</h4>
+                                                                        <p class="card-text">One of the most prestigious school in Indonesia. Place where I built connection with a lot of people, but I have only 1-2 skills that is relevant with current's development of technology.</p>
+                                                                      </div>
+                                                                      <div class="card-footer">
+                                                                        <h6 class="text-muted">Dates: 2016 - 2018</h6>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+
+                                                    <!-- WORK-->
+                                                    <div id="work" class="collapse">
+                                                            <div class="card card-body bg-success text-white profile-content py-5">
+                                                              <h3>Skills</h3>
+                                                              <div class="row">
+                                                                  <div class="col-md-4">
+                                                                      <div class="skillset">
+                                                                        <h4>Programmer</h4>
+                                                                      <p>I am familiar with OOP, have learned various algorithms for searching and sorting with big O time and space complexity. Have used Regular Expression, and  familiar with terminal CLI on macOS. Have good intuition on computer after 10 months of experience.</p>
+                                                                    </div>
+                                                                    </div>
+                                                                <div class="col-md-4">
+                                                                  <div class="skillset">
+                                                                    <h4>Web Development</h4>
+                                                                  <p>Module design pattern and state pattern in Javascript, DOM, AJAX and XHR, http REST API ,database like mongoDB atlas, Node's framework Express.js, React and Redux, and Node.js. Love to use bootstrap as well.</p>
+                                                                </div>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                  <div class="skillset">
+                                                                    <h4>iOS Development</h4>
+                                                                  <p>Able to develop apps with MVC design pattern, design with Xcode, use Firebase Database and Auth, read apple docs and implement codes, and use cocoapods.</p>
+                                                                </div>
+                                                                </div>
+                                                              </div>
+                                                              <div class="row">
+                                                                  <div class="col-md-4">
+                                                                    <div class="skillset">
+                                                                      <h4>Version Control</h4>
+                                                                        <p>Able to use git and github to work in a project with other people.</p>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-4">
+                                                                    <div class="skillset">
+                                                                      <h4>Python</h4>
+                                                                        <p>Love to code in Python and what it can creates. Have created a face recognition and visualisation of google search data for over 5 years</p>
+                                                                      </div>
+                                                                  </div>
+                                                                  <div class="col-md-4">
+                                                                    <div class="skillset">
+                                                                      <h4>Flutter</h4>
+                                                                        <p>Having fun learning Flutter with Dart, able to develop both Android and iOS app. Understand how flutter works, and able to work with provider pattern.
+                                                                          
+                                                                        </p>
+                                                                      </div>
+                                                                  </div>
+                                                                </div> 
+                                                            </div>
+                                                      
+                                                            <div class="card card-body py-5">
+                                                              <h3>What have I built?</h3>
+                                                              <p>Javascript</p>
+                                                              <div class="row no-gutters">
+                                                                <div class="col-md-3">
+                                                                  <a target="_blank"  href="https://edwardtanoto.github.io/pomodoro/">
+                                                                    <img src="images/pomodoro.jpg" alt="pomodoro" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                  <a target="_blank"  href="https://edwardtanoto.github.io/funStation/index.html">
+                                                                    <img src="images/dystopian.jpg" alt="funStation" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                  <a  target="_blank" href="https://edwardtanoto.github.io/educationstation/index.html">
+                                                                    <img src="images/codezone.jpg" alt="code-zone" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                                <div class="col-md-3">
+                                                                  <a  target="_blank" href="https://edwardtanoto.github.io/githubfinder/index.html">
+                                                                    <img src="images/github.jpg" alt="githubfinder" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                              </div>
+                                                              <div class="row no-gutters">
+                                                                <div class="col-md-4">
+                                                                  <a target="_blank"  href="https://edwardtanoto.github.io/weatherapp/">
+                                                                    <img src="images/weather.jpg" alt="Weather App" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                  <a target="_blank"  href="https://edwardtanoto.github.io/tictactoeJS/index.html">
+                                                                    <img src="images/tictactoe.jpg" alt="tictactoe" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                                <div class="col-md-4">
+                                                                  <a target="_blank"  href="https://creativezone.herokuapp.com">
+                                                                    <img src="images/creativezone.jpg" alt="creative-zone" class="img-fluid">
+                                                                  </a>
+                                                                </div>
+                                                              </div>
+                                                                    <br>
+                                                                    <p>Python</p>
+                                                                    <div class="row no-gutters">
+                                                                        <div class="col-md-4">
+                                                                          <a  target="_blank" href="https://github.com/edwardtanoto/face_recognition">
+                                                                            <img src="images/facerec.jpg" alt="face-recognition" class="img-fluid">
+                                                                          </a>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                          <a  target="_blank" href="https://github.com/edwardtanoto/dictionary">
+                                                                            <img src="images/dictionary.jpg" alt="dictionary" class="img-fluid">
+                                                                          </a>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                          <a  target="_blank" href="https://github.com/edwardtanoto/gdata">
+                                                                            <img src="images/data.jpg" alt="google-data" class="img-fluid">
+                                                                          </a>
+                                                                        </div>
+                                                                      </div>
+                                                                      <br>
+                                                                    <p>Swift</p>
+                                                                    <div class="row no-gutters">
+                                                                      <div class="col-md-4">
+                                                                      </div>
+                                                                      <div class="col-md-4">
+                                                                        <a  target="_blank" href="https://github.com/edwardtanoto/BitcoinTicker">
+                                                                          <img src="images/swift.webp" alt="BitcoinTicker" class="img-fluid">
+                                                                        </a>
+                                                                      </div>
+                                                                      <div class="col-md-4">
+                                                                      </div>
+                                                                    </div>
+                                                            </div>
+                                                          </div>
+                                                                  <!-- CONTACT -->
+                                        <div id="contact" class="collapse">
+                                                <div class="card card-body bg-danger text-white profile-content py-5">
+                                                <h2>Contact</h2>
+                                                </div>
+                                        
+                                                <div class="card card-body py-5">
+                                                        <div class="d-flex flex-column">
+                                                                <div class="p-5 bg-dark text-white">
+                                                                  <div class="name d-flex flex-row align-items-center">
+                                                                    <div><a target="_blank" href="https://www.linkedin.com/in/edwardtanoto/"><i class="fa fa-linkedin fa-2x"></i></a></div>&nbsp;&nbsp;
+                                                                    <div><a target="_blank" href="https://www.instagram.com/edwardtanotoo/"><i class="fa fa-instagram fa-2x"></i></a></div>&nbsp;&nbsp;
+                                                                    <div><a target="_blank" href="https://github.com/edwardtanoto"><i class="fa fa-github fa-2x"></i></a></div>
+                                                                  </div>
+                                                                  <br>
+                                                                  <br>
+                                                                  <div>
+                                                                    <form method="POST" action="https://formspree.io/ed27tanoto@gmail.com">
+                                                                      <div class="form-group">
+                                                                        <input type="email" class="form-control" name="email" placeholder="Your email">
+                                                                      </div>
+                                                                      
+                                                                      <div class="form-group">
+                                                                        <textarea name="message" class="form-control" placeholder="Leave some hello"></textarea>
+                                                                        <button class="btn btn-primary" type="submit">Say Hello!</button>
+                                                                      </div>
+                                                                     
+                                                                    </form>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                      </div>
+                                                </div>
+                                                <br>
+                                                <br>
+                                                <br>
+                                            </div>
+      
+                                    </div>
+                                </div>
+                         </div>
+                <div id="skill-section" class="skill"></div>
+            </div>
+    </div>
+    
+
+    <footer>
+
+           
+           <a href="#home" class="a"> <i class="fa fa-code" aria-hidden="true"></i> edwardtanoto <i class="fa fa-desktop" aria-hidden="true"></i> </a>
+         </footer>
+
+    <script src="js/close_menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

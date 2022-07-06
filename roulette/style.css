@@ -1,0 +1,19 @@
+body {
+    background-image: url(./tes.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: montserrat, sans-serif;
+    padding-top: 30px;
+}
+center, iframe {
+    width: 500px;
+    height: 500px;
+    margin:80px auto;
+}
+iframe{
+    display: block;
+}
+.text-center{
+    text-align: center;
+}

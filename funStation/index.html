@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>FunStation</title>
+    <style>
+ .the-builder, .the-wanderer, .heading, .content{
+    text-align: center;
+   
+}
+.heading{
+    top: 0;
+    min-height: 55vh;
+    padding-top: 40vh;
+    width:100%;
+    height:100vh;
+}
+.content{
+    margin-top: 50px;
+    min-height: 65vh;
+}
+.inputOne{
+    background: #FF6666;
+    border: none;
+    border-radius : 8px;
+    height: 35px;
+    text-align: center;
+    color:#fff;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+color: #ccc;
+opacity: 1; /* Firefox */
+text-align: center;
+}</style>
+</head>
+<body>
+    <div class="container-fluid mw-100">
+        <div class="heading align-middle mw-100">
+                <h1 class="align-middle test">Welcome to the <nobr style="color:#FF4242  "><span class="txt-type" data-wait="1000" data-words='["fun"]'></span></nobr>Station</h1>
+                <h3 class="align-middle"><nobr style="color:#FF4242  ">Entertainment</nobr> with <nobr style="color:#FF4242  ">JavaScript</nobr></h3>
+                <br>
+               <label class="alert alert-primary">Originally from EducationStation DOM Section</label>
+        </div>
+        <div class="content">
+        <form class="form-group">
+         <label for="name" class="alert alert-info">Hey there, what's your name?</label>
+         <br>
+         <hr>
+         <input type="text" class="inputOne" minlength="4" id="name" placeholder="Type name..." required>
+         <button class="btn btn-danger" type="submit" id="buttonOne">Submit</button>
+         
+         </form> <br>
+         <div id="outputone"></div> <br> <br>
+         <h5 class="chs-sd">Choose Your Side</h5>
+        </div>
+        <div class="choose-side">
+   
+	<div class="mw-100">
+            <br>
+            <div style="text-align:center;" id="outputtwo"></div>
+            <div class="ph">
+		<div class="example-item darthvader">
+			<div class="lightsaber">
+				<label for="darth-vader-example"></label>
+				<input class="dark" type="checkbox" id="darth-vader-example">
+                <div class="switch"></div>
+                <div class="plasma vader"></div>
+              
+               
+        </div>
+       
+    </div>
+    <label for="darth-vader-example" class="charBuilder alert alert-danger">The Builder</label>
+   
+        <div class="example-item obiwan">
+        <div class="lightsaber">
+            <label for="obi-wan-example"></label>
+            <input class="light" type="checkbox" id="obi-wan-example">
+            <div class="switch"></div>
+            <div class="plasma obi-wan"></div>
+           
+           
+        </div>  
+    </div> 
+    <label for="obi-wan-example" class="charWanderer alert alert-primary">The Wanderer</label>
+            </div>
+    <div class="the-builder">
+        <form class="f1 form-group">
+            <button type="submit" id="build-tech" class="btn btn-danger">Build advanced security robot for more control</button> <br><br>
+            <button type="submit" id="order-army" class="btn btn-danger">Find Stark, previous leader</button><br><br>
+            <button type="submit" id="change-system" class="btn btn-danger">Change the dystopian control system</button>
+        </form>
+        <br>
+        <div class="first-choice-builder"></div> 
+        <div class="second-choice-builder">
+                <br> <br>
+        <form id="if-build-tech" class="form-group">
+            <button class="btn btn-danger" type="submit" id="destroy-rebel">Destroy the rebel</button>
+            <button class="btn btn-danger" type="submit" id="negotiate-rebel">Negotiate with the rebel</button>
+        </form>
+        <form id="if-order-army" class="form-group">
+            <button class="btn btn-danger" type="submit" id="stark-research">Ask him the detail</button>
+            <button class="btn btn-danger" type="submit" id="leave-stark">Leave him alone</button>
+        </form>
+        <form id="if-change-system" class="form-group">
+            <button class="btn btn-danger" type="submit" id="democracy">Democracy, no more oppression</button>
+            <button class="btn btn-danger" type="submit" id="absolute-monarchy">Absolute Monarchy, no one but you.</button>
+        </form>
+       
+    </div> 
+    <div class="third-choice-builder">
+    <form id="stark" class="form-group">
+            <button class="btn btn-danger" type="submit" id="join-stark">Join Stark reform Solitude</button>
+            <button class="btn btn-danger" type="submit" id="punish-stark">Punish Stark for treason</button>
+        </form>
+    </div><br>
+        <div class="output-second-builder"></div>
+        
+    </div>
+    <div class="the-wanderer">
+        <form class="form-group">
+            <button  type="submit" id="old-forest" class="btn btn-primary">Wander around old forest</button><br><br>
+            <button  type="submit" id="to-border" class="btn btn-primary">Get into the border of Solitude</button><br><br>
+            <button  type="submit" id="rebel" class="btn btn-primary">Plan a rebel to overthrow the Builder</button>
+        </form> <br> 
+        <div class="first-choice-wanderer"></div>
+        <div class="second-choice-wanderer">
+                <br> <br>
+        <form id="if-wander-forest"class="form-group">
+            <button class="btn btn-primary" type="submit" id="get-rocket">Walk to the building</button>
+            <button class="btn btn-primary" type="submit" id="leave-rocket">Leave the building</button>
+        </form>
+        <form id="if-into-border"class="form-group">
+            <button class="btn btn-primary" type="submit" id="go-beyond">Go beyond the border</button>
+            <button class="btn btn-primary" type="submit" id="leave-border">Go back to Solitude</button>
+        </form>
+        <div id="if-plan-rebel"></div>
+        
+    </div> 
+    <div class="third-choice-wanderer">
+    <form id="mars"class="form-group">
+            <button class="btn btn-primary" type="submit" id="leave-earth">Leave Earth and fly to Mars</button>
+            <button class="btn btn-primary" type="submit" id="stay">Stay in Earth as wanderer</button>
+    </form>
+    <form id="last-arc"class="form-group">
+            <button class="btn btn-primary" type="submit" id="re-join">Re-join the builder</button>
+            <button class="btn btn-primary" type="submit" id="decline">Decline the offer</button>
+    </form>
+    </div>
+    <br> 
+        <div class="output-second-wanderer"></div>
+    </div>
+    </div>
+    </div>
+  
+</div>
+
+
+
+<script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
